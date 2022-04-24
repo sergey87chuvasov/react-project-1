@@ -1,4 +1,5 @@
 import Costs from './components/Costs/Costs';
+import NewCost from './components/NewCost/NewCost';
 
 const App = () => {
   const costs = [
@@ -21,6 +22,7 @@ const App = () => {
 
   return (
     <div>
+      <NewCost />
       {/*внутрь компонента Costs мы переддаем атрибут costs с Costs.js тк мы должны использовать массив и => передаем массив costs*/}
       <Costs costs={costs} />
     </div>
