@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CostForm.css';
 
-const CostForm = () => {
+const CostForm = (props) => {
   // пустая строка тк в начале отображения инпутов ничего нет, деструктур для получения 2х эл
   const [inputName, setInputName] = useState('');
   const [inputAmount, setInputAmount] = useState('');
@@ -56,7 +56,7 @@ const CostForm = () => {
       date: new Date(inputDate),
     };
 
-    console.log(costData);
+    props.onSaveCostData(costData);
     // запись нового значения в инпут  + value={inputName} те очистка инпутов
     setInputName('');
     setInputAmount('');
