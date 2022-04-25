@@ -11,13 +11,13 @@ const INITIAL_COSTS = [
   },
   {
     id: 'c2',
-    date: new Date(2021, 11, 11),
+    date: new Date(2020, 11, 11),
     description: 'Oneplus 7',
     amount: 380.18,
   },
   {
     id: 'c3',
-    date: new Date(2021, 2, 12),
+    date: new Date(2019, 2, 12),
     description: 'Bosh',
     amount: 88.58,
   },
